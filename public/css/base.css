@@ -1,0 +1,320 @@
+:root{
+    --azul-claro: #A2D2FF;
+    --amarelo-claro: #FEF9EF;
+    --laranja: #FF865E;
+    --amarelo:#fee5405e;
+    --cinza-claro: #a3a3a3dc;
+
+    --opens: 'Open Sans', sans-serif;
+}
+
+.container{
+    margin: 0 272px;
+}
+
+body{
+    font-family: var(--opens);
+}
+
+a, span{
+    display: inline-block;
+    color: unset;
+    transition: 500ms;
+}
+
+img{
+    width: 100%;
+}
+
+
+/* ------------------Cabecalho---------------------- */
+
+.cabecalho {
+    height: 20vh;
+    background-color: var(--azul-claro);
+    overflow: hidden;
+}
+
+.cabecalho__menu__lista__item a{
+    padding: 0.2rem .5rem;
+    border-radius: 20px;
+}
+
+.cabecalho__menu__lista__item a:hover{
+    background-color: var(--amarelo-claro);
+}
+
+.cabecalho__topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    overflow: hidden;
+}
+
+.cabecalho__topo h1 img{
+    width: 10rem;
+}
+
+.cabecalho__topo__entrada{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cabecalho__topo__entrada div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__topo__entrada div img{
+    width: 2.5rem;
+}
+
+.cabecalho__topo__logo-texto{
+    position: relative;
+    top: -15px;
+}
+
+.cabecalho__menu__lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecalho__menu__lista__item{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* ------------------Principal---------------------- */
+
+.principal{
+    margin: .5rem 0 1rem 0;
+}
+
+.principal__conteudo{
+    text-align: center;
+}
+
+.principal__conteudo span{
+    font-weight: bolder;
+    padding: 0 1rem;
+    background-color: white;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.principal__conteudo hr, .principal__login hr{
+    border: 2px solid var(--laranja);
+    border-radius: 50px;
+}
+
+.principal__banners{
+    margin: 1rem 0;
+    display: flex;
+    gap: .5rem;
+    overflow: hidden;
+}
+
+.principal__banners>img{
+    width: 70%;
+}
+
+.principal__banners>div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: .5rem;
+}
+
+/* ------------------Rodape---------------------- */
+
+.rodape{
+    background-color: var(--amarelo-claro);
+    padding: 1rem 0;
+}
+
+.rodape__dados{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.rodape__dados span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: .2rem 0;
+}
+
+.rodape__dados ul{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.rodape__dados__cardapio a:hover, .rodape__dados__conta a:hover, .rodape__dados__atendimento a:hover{
+    text-decoration: underline;
+} 
+
+.rodape__dados__redes{
+    display: flex;
+    gap: 1rem;
+}
+
+/* ------------------Loja Proxima---------------------- */
+
+.principal__mapa>span, .principal__subtitulo{
+    margin: .5rem 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.principal__mapa>span{
+    font-size: 2rem;
+}
+
+.principal__subtitulo{
+    background-color: var(--laranja);
+    padding: .5rem;
+}
+
+/* ------------------Reserva---------------------- */
+ 
+.principal__reserva>span, .principal__acompanhar>h1 span, .principal__cardapio>h1 span{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.principal__reserva__conteudo{
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.principal__reserva__conteudo__botao{
+    padding: 2rem;
+    border-radius: 50px;
+    background-color: var(--laranja);
+    margin: 1rem 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.principal__reserva__conteudo__texto{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* ------------------Acompanhar---------------------- */
+
+.principal__acompanhar>h1, .principal__cardapio>h1{
+    text-align: center;
+}
+
+.principal__acompanhar__campo{
+    margin: 1rem 0;
+    background-color: var(--amarelo-claro);
+    padding: 1rem;
+    height: 20rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.principal__acompanhar__campo form>*{
+    border-radius: 50px;
+    border:1px solid #000;
+    padding: .2rem .4rem;
+    margin: 1rem 0;
+}
+
+.principal__acompanhar__campo form>button{
+    background-color: var(--amarelo);       
+}
+
+.principal__acompanhar__campo form>button:hover{
+    cursor: pointer;
+}
+
+.principal__acompanhar__campo form>input{
+    width: 40%;
+}
+
+/* ------------------Cardapio---------------------- */
+
+.principal__cardapio__campo{
+    background-color: var(--amarelo-claro);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.principal__cardapio__campo__item{
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 2rem;
+    transition: 500ms;
+    display: block;
+}
+
+.principal__cardapio__campo__item:hover{
+    background-color: var(--amarelo);
+}
+
+.principal__cardapio__campo__item a{
+    width: 100%;
+}
+
+/* ------------------Login---------------------- */
+
+.principal__login__campo, .cadastro {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.principal__login__campo label{
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: .25rem 0;
+}
+
+.principal__login__campo input, .logar{
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    padding: .7rem 1rem;
+    width: 100%;
+}
+
+.logar{
+    background-color: var(--amarelo-claro);
+    transition: 500ms;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.logar:hover{
+    cursor: pointer;
+    background-color: var(--amarelo);
+}
+
+.principal__login__campo a {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.principal__login__cadastro p {
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.principal__login__cadastro a{
+    text-decoration: underline;
+}
+
+/* ------------------Cadastro---------------------- */
+
+
