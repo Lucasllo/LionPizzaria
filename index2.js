@@ -49,6 +49,32 @@ const firebaseConfig = {
       res.render('index');
   });
 
+  
+
+  app.get('/',(req, res) => {
+    res.render('index');
+});
+
+app.get('/cardapio',(req, res) => {
+  res.render('cardapio');
+});
+
+app.get('/reserva',(req, res) => {
+  res.render('reserva');
+});
+
+app.get('/loja',(req, res) => {
+  res.render('loja_proxima');
+});
+
+app.get('/login',(req, res) => {
+  res.render('login');
+});
+
+app.get('/acompanhar',(req, res) => {
+  res.render('acompanhar');
+});
+
   app.get('/cadastrar', (req, res) =>{
         let nome = req.query.nomeCliente;
         let cpf = req.query.cpfCliente;
@@ -74,44 +100,4 @@ const firebaseConfig = {
     });
 
   })
-  
-  // var dbref = ref.child("Cliente").child("01");
-  // dbref.on("value", snap => console.log(snap.val()));
-  
-//   const {createServer} = require("http");
-// const { addAbortSignal } = require("stream");
-  
-  
-//   let servidor = createServer((req, res) =>{
-//       res.writeHead(200, {"Content-Type": "text/html; charset=UTF-8"});
-//       res.write("<html><head></head><body>");
-//       res.write("<h1>Hello World</h1>");
-//       let html = "";
-  
-//       let dbref = ref.child("Cliente");
-  
-//       dbref.once('value', function(snap){
-//           snap.forEach(element => {
-//               let childChave = element.key;
-//               console.log(childChave);
-//               html += "<p>Chave: "+ childChave +"</p>\n"
-  
-//               element.forEach(function(childChild){
-//                   let childChave = childChild.key;
-//                   let childDado = childChild.val();
-//                   console.log("Chave: "+ childChave + + " Valor: "+ childDado);
-//                   html += "<p>Chave: "+ childChave +"</p>\n" + "<p>Valor: "+ childDado +"</p>\n"
-                  
-//               })
-//           });
-          
-          
-          
-//               res.write(html);
-//               res.write("</body></html>")
-//               res.end()
-//       })
-  
-  
-//   })
   
