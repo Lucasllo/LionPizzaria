@@ -318,3 +318,98 @@ img{
 /* ------------------Cadastro---------------------- */
 
 
+.principal__cadastro__campo{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.principal__cadastro__campo label {
+    display: block;
+    padding-bottom: .5rem;
+    width: 40%;
+    margin-top: .75rem;
+}
+
+.principal__cadastro__campo div {
+    width: 60%;
+    margin: 0 auto;
+} 
+
+.principal__cadastro__campo input {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 7px;
+    padding: .7rem 1rem;
+    width: 100%;
+}
+
+.logar{
+    text-align: center;
+}
+
+/* ------------------Cadapio-Opcoes---------------------- */
+
+.principal__cardapio__campo__pizzas{
+    background-color: var(--amarelo-claro);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.principal__cardapio__campo__pizzas h2{
+    text-transform: uppercase;
+}
+
+.principal__cardapio__campo__pizzas__item{
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 2rem;
+    display: block;
+}
+
+.formulario__pizzas .principal__cardapio__campo__pizzas__item{
+    transition: 500ms;
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem;
+}
+
+.formulario__pizzas .principal__cardapio__campo__pizzas__item:hover{
+    background-color: var(--amarelo);
+}
+
+.principal__cardapio__campo__pizzas__item input{
+    width: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btsubmit{
+    display: none;
+}
+
+.addCarrinho{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    background-color: var(--azul-claro);
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}  
+
+.addCarrinho img{
+    width: 2rem;
+}
+
+
+.addCarrinho:hover{
+    cursor: pointer;
+}

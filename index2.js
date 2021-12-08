@@ -75,6 +75,14 @@ app.get('/acompanhar',(req, res) => {
   res.render('acompanhar');
 });
 
+app.get('/cadastro',(req, res) => {
+  res.render('cadastro');
+});
+
+app.get('/cardapio_pizzas',(req, res) => {
+  res.render('cardapio_pizzas');
+});
+
   app.get('/cadastrar', (req, res) =>{
         let nome = req.query.nomeCliente;
         let cpf = req.query.cpfCliente;
